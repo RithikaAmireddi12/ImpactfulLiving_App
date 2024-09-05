@@ -1,0 +1,139 @@
+.matrix-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.quadrant {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8; /* Adjust this value to control overall transparency */
+}
+
+.quadrant > * {
+  position: relative;
+  z-index: 2;
+}
+
+.quick-wins { background-image: url('QuickWins.png'); }
+.big-projects { background-image: url('BigProj.png'); }
+.fill-in-jobs { background-image: url('FillIn.png'); }
+.thankless-tasks { background-image: url('ThankLess.png'); }
+
+.quadrant h3 {
+  margin-top: 0;
+  padding: 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.quadrant ul {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.quadrant li {
+  margin-bottom: 0.625rem;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2);
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 0.625rem;
+}
+
+.task-item span {
+  flex-grow: 1;
+}
+
+.task-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #ff3333;
+}
+
+.uncategorized-tasks {
+  margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1260px) {
+  .matrix {
+    grid-template-columns: 1fr;
+    max-width: 700px; /* Adjusted for larger mobile view */
+  }
+  
+  .quadrant {
+    width: 100%; /* Full width on smaller screens */
+    height: 350px; /* Slightly smaller on mobile */
+  }
+}
+
+/* Styles for the motivation section */
+.motivation-section {
+  margin-top: 40px;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.motivation-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.motivation-quote {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #333;
+}
+

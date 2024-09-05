@@ -1,0 +1,29 @@
+.header {
+    background: linear-gradient(135deg, #cbfa5c, #f7ffd8); /* Lime green gradient */
+    color: white; /* White text for contrast */
+    padding: 40px 20px; /* More padding for a spacious look */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    border-bottom: none; /* Remove the bottom border */
+    transition: background 0.3s ease; /* Smooth transition on hover */
+}
+
+.header:hover {
+    background: linear-gradient(135deg, #c2f6c2, #314531); /* Reverse gradient on hover for interaction */
+}
+
+.header-title {
+    margin: 0;
+    font-family: 'DM Serif Display', serif; /* Elegant serif font */
+    font-size: 2.5rem; /* Larger text size for impact */
+    font-weight: bold; /* Bold text for emphasis */
+    letter-spacing: 2px; /* More spacing for a stylish look */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow to the text for depth */
+    transform: translateY(0);
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth text animation */
+}
+
+.header-title:hover {
+    transform: translateY(-5px);
+    text-shadow: 3px 6px 8px rgba(0, 0, 0, 0.4);
+}
